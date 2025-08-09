@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inputNumber</title>
+  </head>
+  <body>
+    <p id="result"></p>
+    <script>
+      function userChecking() {
+        var a = Number(prompt("Enter number a!"));
+        var b = Number(prompt("Enter number b!"));
+        var reuslt;
+        if (a > b) {
+          alert("Number a is higher than number b!");
+        } else if (a === b) {
+          result = a + b;
+        }
+        document.getElementById("result").innerHTML = `Result is: ${result}`;
+      }
+      userChecking();
+    </script>
+  </body>
+</html>
