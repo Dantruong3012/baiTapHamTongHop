@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checking</title>
+  </head>
+  <body>
+    <p id="result"></p>
+    <script>
+      function checking() {
+        var stars = [
+          "polaris",
+          "aldebaran",
+          "deneb",
+          "vega",
+          "altair",
+          "dubhe",
+          "regulus",
+        ];
+        var nameOfStars = [
+          "Ursa Minor",
+          "Taurus",
+          "Cygnus",
+          "Lyra",
+          "Aquila",
+          "Ursa Major",
+          "Leo",
+        ];
+        var inputName = prompt("Please enter your constellation name!")
+          .trim()
+          .toLowerCase();
+        var index = stars.indexOf(inputName);
+        if (index !== -1) {
+          document.getElementById("result").innerHTML = nameOfStars[index];
+        } else {
+          document.getElementById("result").innerHTML = "cant be found!";
+        }
+      }
+      checking();
+    </script>
+  </body>
+</html>
